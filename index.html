@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="hijab.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    *{
+    color: rgb(77, 48, 77);}
+    .photo {
+        border-radius: 300px;
+    }
+    .iam{
+        padding-top: 250px;
+        font-family: Georgia;
+        color: rgb(193, 192, 192);
+    }
+
+    .maintext {
+        font-family: monospace;
+        font-size: 70px;
+    }
+
+    .subtext,.exp,.aboutme {
+       color: rgb(190, 187, 187);
+        font-family:monospace;
+    }
+    .port{
+        font-size: 30px;
+    }
+    .second {
+        color: black;
+    }
+    .home{
+        background-color: black;
+        padding: 50px;
+    }
+    span{
+    color:rgb(224, 218, 218);
+    }
+    nav{
+        display:flex;
+        justify-content: space-between;
+        background-color: black;
+        padding-right:10px;
+        align-items: center;
+        position:sticky;
+        top:0px;
+    }
+    nav ul li{
+        list-style-type: none;
+        display:inline-block;
+        padding: 10px 10px;}
+    nav ul li a{
+        color:white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    nav ul li a:hover{
+        color: rgb(77, 48, 77);
+        transition: .4s;
+    }
+    .about{
+        background-color: #191919;
+        padding-top:100px;
+        padding-bottom:150px;
+        text-align: center;
+    }
+    .edu{
+        background-color: black;
+        padding-top:100px;
+        padding-bottom:50px;
+        padding-right:70px;
+        padding-left:50px;
+        padding-bottom:100px;
+    }
+    #education{
+        font-family: monospace;
+        font-size: 50px;
+    }
+    .load{
+        border:2px dotted rgb(189, 185, 185);
+        width:150px;
+        height:20px;
+    }
+    .purple{
+        background-color: rgb(77, 48, 77);
+        width:33.4%;
+        height:100%;
+    }
+    .eduu{
+        display:flex;
+        justify-content: space-between;
+    }
+    .contact{
+        text-align: center;
+        background-color: #191919;
+        padding-bottom:50px;
+        padding-top: 100px;;
+    }
+    #contact{
+        font-family: monospace;
+        font-size: 50px;
+    }
+    .links a{
+        padding:10px;
+    }
+</style>
+
+<body>
+        <nav>
+                <img src="hijab.jpeg" alt="logo" width="55" height="40">
+                <p class="port"><span>Port</span>folio</p>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+        </nav>
+    <div class="row home">
+        <div class="col-12  col-md-6"><img id="home" class="photo" src="me.jpg" align="right" width="450px" height="400px"></div>
+        <div class="col-12  col-md-6" align="center">
+            <h3 class="iam">I am</h3>
+            <h1 class="maintext">Hudha Machingal</h1>
+            <p class="subtext">Really into this</p>
+        </div>
+    </div>
+    <div class="about">
+            <p id="about" class="aboutme">About Me...</p>
+            <h1>HELLO</h1>
+            <p class="exp">I am a student pursuing BCA who is <br>learning and trying my best, making use of every
+                <br>opportunity thrown infront of me.</p>
+    </div>
+    <div class="edu">
+        <h3 id="education">Education</h3><br><br><br>
+        <div class="eduu">
+       <p class="exp">Passed Grade 10 with 95%<br>Passed Grade 12 with 91%<br>Studying web design through mulearn<br>Currently Pursuing BCA in Safi institute of advanced study</p><img src="book.jpg" width="150" height="100"></div>
+       <div class="load"><div class="purple"></div></div>
+       
+    </div>
+    <div class="contact">
+        <h1 id="contact">Contact</h1><br><br><br>
+        <p class="exp">E-mail:whothemacc@gmail.com</p>
+        <p class="exp">Phone:9037597723</p><br><br><br>
+        <div class="links">
+            <a href="https://instagram.com/whothe_mac?igshid=cTEwYW41cm45cGNp&utm_source=qr"><img src="instagram.png" width="50px" height="50px"></a>
+            <a href="https://github.com/whoTheMac"><img src="github.png" width="50px" height="50px"></a>
+            <a href="https://twitter.com/Hudha162416"><img src="twitter.png" width="50px" height="50px"></a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
