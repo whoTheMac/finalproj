@@ -21,7 +21,7 @@
         align-self: auto;
     }
     .iam{
-        padding-top: 250px;
+        padding-top:300px;
         font-family: Georgia;
         color: rgb(193, 192, 192);
     }
@@ -29,6 +29,12 @@
     .maintext {
         font-family: monospace;
         font-size: 60px;
+        color:rgb(193, 192, 192);
+    }
+    .mt{
+        font-size:30px;
+        font-family: monospace;
+
     }
 
     .subtext,.exp,.aboutme {
@@ -43,33 +49,30 @@
     }
     .home{
         background-color: black;
-        padding-top: 50px;
         padding-bottom:50px;
     }
     span{
     color:rgb(224, 218, 218);
     }
     nav{
-        display:flex;
-        justify-content: space-between;
         background-color: black;
-        padding-right:10px;
-        align-items: center;
-        position:sticky;
-        top:0px;
     }
-    nav ul li{
+    .nav-item{
         list-style-type: none;
         display:inline-block;
         padding: 10px 10px;}
-    nav ul li a{
-        color:white;
+    .nav-link{
+        color:rgb(199, 198, 198);
         text-decoration: none;
         font-weight: bold;
+        font-size: 15px;
     }
-    nav ul li a:hover{
+    .nav-link:hover{
         color: rgb(77, 48, 77);
         transition: .4s;
+    }
+    .port{
+        font-size: 30px;
     }
     .about{
         background-color: #191919;
@@ -83,9 +86,9 @@
         padding-bottom:50px;
         padding-right:70px;
         padding-left:50px;
-        padding-bottom:100px;
+        padding-bottom:150px;
     }
-    #education{
+    #education,#projects{
         font-family: monospace;
         font-size: 50px;
     }
@@ -116,40 +119,100 @@
     .links a{
         padding:10px;
     }
+    .pr{
+        text-decoration: none;
+        font-weight: bold;
+        color:black;
+        font-family: monospace;
+        margin-top:20px;
+    }
+    .proj{
+        background-color: rgb(77,48,77);
+        padding-top:100px;
+        padding-bottom:50px;
+        padding-left:50px;
+        padding-right:50px;
+    }
+    #projects{
+        color:#191919;
+        text-align: center;
+        margin-bottom:100px;
+    }
+    .sp{
+        border-radius:10px;
+        background-color:#191919;
+        padding-left:20px;
+    }
+    .hoho{
+        color:rgb(77,48,77);
+    }
+    .hoho:hover{
+        color:rgb(208, 205, 205);
+    }
+    
+
 </style>
 
 <body>
-        <nav>
-                <img src="hijab.jpeg" alt="logo" width="55" height="40">
-                <p class="port"><span>Port</span>folio</p>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+    <nav class="navbar navbar-expand-lg">
 
-        </nav>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link hoho" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education">Education</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        <p class="port"><span>Port</span>folio</p>
+        <img src="hijab.jpeg" alt="logo" width="90" height="53">
+      </nav>
     <div class="row home">
-        <div class="col-12  col-md-6"><img id="home" class="photo" src="me.jpg" align="right" width="390px" height="385px"></div>
-        <div class="col-12  col-md-6" align="center">
+        <div class="col-6  col-md-6" align="center"><img id="home" class="photo" src="me.jpg"  width="390px" height="385px"></div>
+        <div class="col-6  col-md-6" align="left">
             <h3 class="iam">I am</h3>
-            <h1 class="maintext">Hudha Machingal</h1>
-            <p class="subtext">Really into this</p>
+            <h1 class="maintext">Hudha<p class="mt">MACHINGAL</p></h1>
+            <p class="subtext">"Really into this"</p>
         </div>
     </div>
     <div class="about">
             <p id="about" class="aboutme">About Me...</p>
             <h1>HELLO</h1>
-            <p class="exp">I am a student pursuing BCA who is <br>learning and trying my best, making use of every
-                <br>opportunity thrown infront of me.</p>
+            <p class="exp">A laid-back aspiring web designer<br> with a passion for turning ideas into<br> pixel-perfect realities.<br>Am a student pursuing BCA who is <br>learning and trying my best, making use of every
+                <br>opportunity thrown infront of me.<br>Lets create something awesome together.</p>
     </div>
     <div class="edu">
         <h3 id="education">Education</h3><br><br><br>
         <div class="eduu">
-       <p class="exp">Passed Grade 10 with 95%<br>Passed Grade 12 with 91%<br>Studying web design through mulearn<br>Currently Pursuing BCA in Safi institute of advanced study</p><img src="book.jpg" width="150" height="100"></div>
+       <p class="exp"><3 Passed Grade 10 with 95%<br><3 Passed Grade 12 with 91%<br><3 Studying web designing through mulearn<br><3 Currently Pursuing BCA in Safi institute of advanced study</p><img src="book.jpg" width="150" height="100"></div>
        <div class="load"><div class="purple"></div></div>
-       
+    </div>
+    <div class="proj">
+        <h1 id="projects">My <span>Projects</span></h1>
+        <a class="pr" href="https://whothemac.github.io/htmlFinalTask/">Click here to view my html project</a>
+        <p class="exp sp">Html</p>
+        <a class="pr" href="https://whothemac.github.io/cssfinal/">Click here to view my css project</a>
+        <p class="exp sp">Css</p>
+        <a class="pr" href="https://whothemac.github.io/boostrapfinalproject/">Click here to view my bootstrap project</a>
+        <p class="exp sp">Bootstrap</p>
+        <a class="pr" href="https://whothemac.github.io/javafinal/">Click here to view my javascript project</a>
+        <p class="exp sp">JavaScript</p>
+
+    
     </div>
     <div class="contact">
         <h1 id="contact">Contact</h1><br><br><br>
