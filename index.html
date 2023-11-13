@@ -13,15 +13,17 @@
 <style>
     html, body{
         overflow-x:hidden;
+        background-color:#1d1c1c;
     }
     *{
     color: rgb(77, 48, 77);}
     .photo {
         border-radius: 300px;
         align-self: auto;
+        
     }
     .iam{
-        padding-top:300px;
+        padding-top:460px;
         font-family: Georgia;
         color: rgb(193, 192, 192);
     }
@@ -50,6 +52,8 @@
     .home{
         background-color: black;
         padding-bottom:50px;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
     }
     span{
     color:rgb(224, 218, 218);
@@ -65,32 +69,39 @@
         color:rgb(199, 198, 198);
         text-decoration: none;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 19px;
     }
     .nav-link:hover{
         color: rgb(77, 48, 77);
         transition: .4s;
     }
     .port{
-        font-size: 30px;
+        font-size: 35px;
     }
     .about{
         background-color: #191919;
         padding-top:100px;
         padding-bottom:150px;
         text-align: center;
+        margin:20px;
+        border:2px rgba(0, 0, 0, 0.158) solid;
+        border-radius:30px;
     }
-    .edu{
+    #Education{
         background-color: black;
         padding-top:100px;
         padding-bottom:50px;
         padding-right:70px;
         padding-left:50px;
         padding-bottom:150px;
+        margin:20px;
+        border:2px rgba(0, 0, 0, 0.158) solid;
+        border-radius:30px;
     }
     #education,#projects{
         font-family: monospace;
         font-size: 50px;
+        
     }
     .load{
         border:2px dotted rgb(189, 185, 185);
@@ -106,11 +117,14 @@
         display:flex;
         justify-content: space-between;
     }
-    .contact{
+    #Contact{
         text-align: center;
         background-color: #191919;
         padding-bottom:50px;
-        padding-top: 100px;;
+        padding-top: 100px;
+        margin:20px;
+        border:2px rgba(0, 0, 0, 0.158) solid;
+        border-radius:30px;
     }
     #contact{
         font-family: monospace;
@@ -126,22 +140,20 @@
         font-family: monospace;
         margin-top:20px;
     }
-    .proj{
+    #Projects{
         background-color: rgb(77,48,77);
         padding-top:100px;
         padding-bottom:50px;
         padding-left:50px;
         padding-right:50px;
+        margin:20px;
+        border:2px rgba(0, 0, 0, 0.158) solid;
+        border-radius:30px;
     }
     #projects{
         color:#191919;
         text-align: center;
         margin-bottom:100px;
-    }
-    .sp{
-        border-radius:10px;
-        background-color:#191919;
-        padding-left:20px;
     }
     .hoho{
         color:rgb(77,48,77);
@@ -152,6 +164,58 @@
     span.navbar-toggler-icon{
        border:2px dotted rgb(77,48,77);
     }
+    .htm{
+        background-color:rgba(221, 220, 220, 0.727);
+        height:20px;
+        width:245px;
+        color:black;
+        border-radius:30px;
+        padding-left:10px;
+        font-weight: bold;
+    }
+    .bg{
+        background-color:#191919;
+        height:20px;
+        width:250px;
+        border-radius:30px;
+        display:flex;
+        justify-content: space-between;
+        margin-bottom:30px;
+    }
+    .perc{
+        color:white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size:15px;
+        padding-right:10px;
+    }
+    .bp{
+        background-color:rgba(221, 220, 220, 0.727);
+        height:20px;
+        width:170px;
+        color:black;
+        border-radius:30px;
+        padding-left:10px;
+        font-weight: bold;
+    }
+    .js{
+        background-color:rgba(221, 220, 220, 0.727);
+        height:20px;
+        width:200px;
+        color:black;
+        border-radius:30px;
+        padding-left:10px;
+        font-weight: bold;
+    }
+    .css{
+        background-color:rgba(221, 220, 220, 0.727);
+        height:20px;
+        width:230px;
+        color:black;
+        border-radius:30px;
+        padding-left:10px;
+        font-weight: bold;
+    }
+
     
 
 </style>
@@ -171,53 +235,53 @@
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#education">Education</a>
+                <a class="nav-link" href="#Education">Education</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#Projects">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="#Contact">Contact</a>
               </li>
             </ul>
           </div>
         <p class="port"><span>Port</span>folio</p>
-        <img src="hijab.jpeg" alt="logo" width="90" height="53">
+        <img src="hijab.jpeg" alt="logo" width="90" height="70">
       </nav>
     <div class="row home">
-        <div class="col-6  col-md-6" align="center"><img id="home" class="photo" src="me.jpg"  width="390px" height="385px"></div>
+        <div class="col-6  col-md-6" align="center"><img id="home" class="photo" src="me.jpg"  width="370px" height="570px"></div>
         <div class="col-6  col-md-6" align="left">
             <h3 class="iam">I am</h3>
             <h1 class="maintext">Hudha<p class="mt">MACHINGAL</p></h1>
             <p class="subtext">"Really into this"</p>
         </div>
     </div>
-    <div class="about">
-            <p id="about" class="aboutme">About Me...</p>
+    <div class="about"id="about">
+            <p class="aboutme">About Me...</p>
             <h1>HELLO</h1>
             <p class="exp">A laid-back aspiring web designer<br> with a passion for turning ideas into<br> pixel-perfect realities.<br>Am a student pursuing BCA who is <br>learning and trying my best, making use of every
                 <br>opportunity thrown infront of me.<br>Lets create something awesome together.</p>
     </div>
-    <div class="edu">
+    <div id="Education">
         <h3 id="education">Education</h3><br><br><br>
         <div class="eduu">
        <p class="exp"><3 Passed Grade 10 with 95%<br><3 Passed Grade 12 with 91%<br><3 Studying web designing through mulearn<br><3 Currently Pursuing BCA in Safi institute of advanced study</p><img src="book.jpg" width="150" height="100"></div>
        <div class="load"><div class="purple"></div></div>
     </div>
-    <div class="proj">
+    <div id="Projects" align="center">
         <h1 id="projects">My <span>Projects</span></h1>
-        <a class="pr" href="https://whothemac.github.io/htmlFinalTask/">Click here to view my html project</a>
-        <p class="exp sp">Html</p>
-        <a class="pr" href="https://whothemac.github.io/cssfinal/">Click here to view my css project</a>
-        <p class="exp sp">Css</p>
-        <a class="pr" href="https://whothemac.github.io/boostrapfinalproject/">Click here to view my bootstrap project</a>
-        <p class="exp sp">Bootstrap</p>
-        <a class="pr" href="https://whothemac.github.io/javafinal/">Click here to view my javascript project</a>
-        <p class="exp sp">JavaScript</p>
+        <a class="pr" href="https://whothemac.github.io/htmlFinalTask/">Click here to view my <span>html project</span></a>
+        <div class="bg"><div class="exp htm">Html</div><p class="perc">95%</p></div>
+        <a class="pr" href="https://whothemac.github.io/cssfinal/">Click here to view my <span>css project</span></a>
+        <div class="bg"><div class="exp css">Css</div><p class="perc">90%</p></div>
+        <a class="pr" href="https://whothemac.github.io/boostrapfinalproject/">Click here to view my <span>bootstrap project</span></a>
+        <div class="bg"><div class="exp bp">Bootstrap</div><p class="perc">70%</p></div>
+        <a class="pr" href="https://whothemac.github.io/ffj/">Click here to view my <span>javascript project</span></a>
+        <div class="bg"><div class="exp js">JavaScript</div><p class="perc">80%</p></div>
 
     
     </div>
-    <div class="contact">
+    <div id="Contact">
         <h1 id="contact">Contact</h1><br><br><br>
         <p class="exp">E-mail:whothemacc@gmail.com</p>
         <p class="exp">Phone:9037597723</p><br><br><br>
